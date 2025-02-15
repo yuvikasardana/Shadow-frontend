@@ -1,0 +1,15 @@
+.home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/bg-home.jpg") no-repeat center center/cover;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }

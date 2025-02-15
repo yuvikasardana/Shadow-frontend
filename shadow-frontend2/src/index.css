@@ -1,0 +1,13 @@
+
+body {
+  background-color: transparent !important;
+}
+html, body {
+  background: url('../src/assets/bg-home.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  color: white;
+}
+
+/* .chat-container {
+  background: none;
+} */

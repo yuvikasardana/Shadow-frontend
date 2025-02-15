@@ -9,11 +9,12 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [alert, setAlert] = useState(null);
   const navigate = useNavigate();
+  const registerUrl = import.meta.env.VITE_REGISTER_URL;
 
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(REACT_APP_BACKEND_URL, {
+      const response = await axios.post("https://shadow-backend-pnsv.onrender.com/api/auth/local/register", {
         username,
         email,
         password,
@@ -25,6 +26,7 @@ const Register = () => {
       }, 2000);
     } catch (error) {
       setAlert({ type: "danger", message: " Registration failed. Please try again." });
+      console.log(error)
     }
   };
 

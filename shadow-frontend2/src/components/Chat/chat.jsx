@@ -26,7 +26,7 @@ const Chat = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      const newSocket = io(REACT_APP_BACKEND_URL, {
+      const newSocket = io("https://shadow-backend-pnsv.onrender.com", {
         auth: { token: localStorage.getItem("token") },
       });
 

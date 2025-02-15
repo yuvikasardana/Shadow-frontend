@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch(REACT_APP_BACKEND_URL, {
+      const response = await fetch("https://shadow-backend-pnsv.onrender.com/api/auth/local/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:1337/api/auth/local/register", {
+      const response = await axios.post(REACT_APP_BACKEND_URL, {
         username,
         email,
         password,

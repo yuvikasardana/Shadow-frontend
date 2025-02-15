@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://localhost:1337/api/auth/local", {
+      const response = await fetch(REACT_APP_BACKEND_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

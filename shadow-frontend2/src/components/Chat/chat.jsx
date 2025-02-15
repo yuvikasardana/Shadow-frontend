@@ -26,7 +26,7 @@ const Chat = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      const newSocket = io("http://localhost:1337", {
+      const newSocket = io(REACT_APP_BACKEND_URL, {
         auth: { token: localStorage.getItem("token") },
       });
 
